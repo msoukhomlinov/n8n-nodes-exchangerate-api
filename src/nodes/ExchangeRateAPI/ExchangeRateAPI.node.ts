@@ -218,14 +218,16 @@ export class ExchangeRateAPI implements INodeType {
     const returnData: IDataObject[] = [];
     let responseData: IDataObject = {};
 
-    const resource = this.getNodeParameter('resource', 0) as string;
     const operation = this.getNodeParameter('operation', 0) as string;
     const credentials = await this.getCredentials('exchangeRateCredentialsApi');
     const apiKey = credentials.apiKey as string;
 
     // Check that API key is not empty
     if (!apiKey || apiKey.trim() === '') {
-      throw new NodeOperationError(this.getNode(), 'API key is empty. Please provide a valid API key in the credentials.');
+      throw new NodeOperationError(
+        this.getNode(),
+        'API key is empty. Please provide a valid API key in the credentials.',
+      );
     }
 
     for (let i = 0; i < items.length; i++) {
@@ -252,8 +254,14 @@ export class ExchangeRateAPI implements INodeType {
           // Validate the API response for getExchangeRates
           if (responseData.result === 'success') {
             // Validate that the rates object exists and has the expected structure
-            if (!responseData.conversion_rates || typeof responseData.conversion_rates !== 'object') {
-              throw new NodeOperationError(this.getNode(), 'Invalid API response: conversion_rates data is missing or has an unexpected format');
+            if (
+              !responseData.conversion_rates ||
+              typeof responseData.conversion_rates !== 'object'
+            ) {
+              throw new NodeOperationError(
+                this.getNode(),
+                'Invalid API response: conversion_rates data is missing or has an unexpected format',
+              );
             }
           } else {
             // Handle error response
@@ -290,7 +298,10 @@ export class ExchangeRateAPI implements INodeType {
 
             // Ensure decimalPlaces is a non-negative integer
             if (decimalPlaces < 0 || !Number.isInteger(decimalPlaces)) {
-              throw new NodeOperationError(this.getNode(), 'Decimal places must be a non-negative integer');
+              throw new NodeOperationError(
+                this.getNode(),
+                'Decimal places must be a non-negative integer',
+              );
             }
           }
 
@@ -313,15 +324,24 @@ export class ExchangeRateAPI implements INodeType {
 
           if (responseData.result === 'success') {
             // Validate that the rates object exists and has the expected structure
-            if (!responseData.conversion_rates || typeof responseData.conversion_rates !== 'object') {
-              throw new NodeOperationError(this.getNode(), 'Invalid API response: conversion_rates data is missing or has an unexpected format');
+            if (
+              !responseData.conversion_rates ||
+              typeof responseData.conversion_rates !== 'object'
+            ) {
+              throw new NodeOperationError(
+                this.getNode(),
+                'Invalid API response: conversion_rates data is missing or has an unexpected format',
+              );
             }
 
             const rates = responseData.conversion_rates as { [key: string]: number };
 
             // Check if the target currency exists in the rates
             if (!rates[toCurrency]) {
-              throw new NodeOperationError(this.getNode(), `Currency ${toCurrency} not found in exchange rates`);
+              throw new NodeOperationError(
+                this.getNode(),
+                `Currency ${toCurrency} not found in exchange rates`,
+              );
             }
 
             const exchangeRate = rates[toCurrency];
@@ -330,7 +350,7 @@ export class ExchangeRateAPI implements INodeType {
             // Apply conversion fee if enabled
             let valueWithFee = convertedValue;
             if (useConversionFee) {
-              valueWithFee = convertedValue * (1 + (conversionFee / 100));
+              valueWithFee = convertedValue * (1 + conversionFee / 100);
             }
 
             // Round to specified decimal places if enabled

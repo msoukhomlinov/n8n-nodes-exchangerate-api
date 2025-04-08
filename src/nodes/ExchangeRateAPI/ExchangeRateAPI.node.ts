@@ -39,7 +39,7 @@ export class ExchangeRateAPI implements INodeType {
     displayName: 'ExchangeRate API',
     name: 'exchangeRateAPI',
     icon: 'file:exchangerate.svg',
-    group: ['transform'],
+    group: ['finance'],
     version: 1,
     subtitle: '={{$parameter["resource"] + ": " + $parameter["operation"]}}',
     description: 'Consume ExchangeRate API',

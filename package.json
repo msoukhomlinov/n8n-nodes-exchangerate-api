@@ -26,7 +26,7 @@
     "format": "prettier --write . --ignore-path .gitignore",
     "lint": "eslint . --ignore-path .gitignore",
     "lintfix": "eslint . --fix --ignore-path .gitignore",
-    "prepublishOnly": "npm run build && npm run lint -c .eslintrc.prepublish.js src"
+    "prepublishOnly": "npm run build && eslint src --ext .ts"
   },
   "files": [
     "dist"

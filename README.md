@@ -3,23 +3,11 @@
 ![n8n-nodes-exchangerate-api](https://img.shields.io/badge/n8n--nodes--exchangerate--api-0.2.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support-yellow.svg)](https://buymeacoffee.com/maxs)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support-yellow.svg)](https://buymeacoffee.com/msoukhomlinov)
 
 This is an n8n community node for the [ExchangeRate API](https://www.exchangerate-api.com). It provides a simple way to get currency exchange rates and perform conversions within your n8n workflows.
 
 [n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/reference/license/) workflow automation platform.
-
-## Recent Changes
-
-### [0.2.0] - 2025-04-15
-- Added codex metadata for better categorization in n8n
-- Improved node documentation
-- Updated dependencies
-
-### [0.1.0] - 2025-04-01
-- Initial release with support for getting exchange rates and converting values
-- Support for conversion fee and decimal place configuration
-- Detailed and simple response formats
 
 [Installation](#installation)  
 [Credentials](#credentials)  
@@ -120,7 +108,7 @@ For bug reports or feature requests, please use the GitHub issues section.
 
 If you find this node helpful and would like to support its development:
 
-[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/maxs)
+[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/msoukhomlinov)
 
 ## License
 

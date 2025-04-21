@@ -2,6 +2,11 @@
 
 All notable changes to the n8n-nodes-exchangerate-api will be documented in this file.
 
+## [1.0.0] - 21 April 2025
+
+### Improvements
+- Minor code cleanup and optimizations
+
 ## [0.2.0] - 21 April 2025
 
 ### Improvements

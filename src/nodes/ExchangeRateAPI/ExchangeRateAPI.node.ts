@@ -54,6 +54,19 @@ export class ExchangeRateAPI implements INodeType {
         required: true,
       },
     ],
+    codex: {
+      categories: ['Finance'],
+      resources: {
+        primaryDocumentation: [
+          {
+            url: 'https://docs.n8n.io/integrations/community-nodes/nodes/n8n-nodes-exchangerate-api/',
+          },
+        ],
+      },
+      subcategories: {
+        Finance: ['Currency Exchange'],
+      },
+    },
     properties: [
       {
         displayName: 'Resource',

@@ -2,6 +2,13 @@
 
 All notable changes to the n8n-nodes-exchangerate-api will be documented in this file.
 
+## [0.2.0] - 21 April 2025
+
+### Improvements
+- Added codex metadata to improve node categorization in n8n
+- Enhanced documentation and descriptions
+- Updated dependencies to latest versions
+
 ## [0.1.0] - April 2025
 
 ### Features

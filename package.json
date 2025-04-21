@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/msoukhomlinov/n8n-nodes-exchangerate-api.git"
+    "url": "git+https://github.com/msoukhomlinov/n8n-nodes-exchangerate-api.git"
   },
   "main": "index.js",
   "scripts": {

@@ -1,6 +1,6 @@
 # n8n-nodes-exchangerate-api
 
-![n8n-nodes-exchangerate-api](https://img.shields.io/badge/n8n--nodes--exchangerate--api-0.2.0-blue)
+![n8n-nodes-exchangerate-api](https://img.shields.io/badge/n8n--nodes--exchangerate--api-1.0.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support-yellow.svg)](https://buymeacoffee.com/msoukhomlinov)
@@ -112,4 +112,4 @@ If you find this node helpful and would like to support its development:
 
 ## License
 
-[MIT](LICENSE.md) 
+[MIT](LICENSE.md)

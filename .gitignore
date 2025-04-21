@@ -41,3 +41,4 @@ coverage/
 .cursorconfig
 .cursorignore
 .cursorrules
+.cursor-settings.json

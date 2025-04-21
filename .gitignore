@@ -42,3 +42,5 @@ coverage/
 .cursorignore
 .cursorrules
 .cursor-settings.json
+
+package-lock.json
